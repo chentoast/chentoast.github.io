@@ -1,41 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-.sidenav {
-	width:250px;
-	float:left;
-	top:0;
-	overflow-x:hidden;
-	margin-top:150px;
-	margin-left:600px;
-	margin-right:0px;
+.container {
+	font-family: "Source Sans Pro", "Raleway", Sans-serif;
+	display: grid;
+	width:100%;
+	height:100%;
+	grid-template-columns: 49% 49%;
+	grid-gap: 2%;
 }
 
-.sidenav p, ul, h1{
-	font-family: "Source Sans Pro",Raleway,Sans-serif;
-	font-size: 15;
- }
- 
-
-.sidenav img {
-	border-radius:15px;
-	width:150px;
-	height:200px;
-	margin-top:25px;
-	margin-bottom:20px;
+.sidebar {
+	text-align:center;
+	padding-left:80%;
+	padding-top:30%;
 }
 
 .main {
-	width:300px;
-	margin-top:250px;
-	float:left;
+	padding-top:40%;
+	padding-right:70%;
+	text-decoration:none;
 }
 
-.main p {
-	font-family: "Source Sans Pro","Raleway",Sans-serif;
-	font-size: 20;
-	word-spacing: 3px;
+p {
+	text-decoration:none !important;
 }
 
+img {
+	width:80%;
+	height:80%;
+}
 
 a {
 	color:black;
@@ -48,14 +41,14 @@ a:hover {
 }
 
  
- li {
+li {
 	list-style-type: none;
-	margin-top: 10px;
- }
+	margin-top: 6%;
+}
  
- hr {
+hr {
+	text-align:left;
 	border-top:3px solid black;
-	margin-right: 100px;
-	/*width:500px;*/
- }
+	width:80%;
+}
  
