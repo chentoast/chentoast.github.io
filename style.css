@@ -11,14 +11,19 @@
 
 .sidebar {
 	text-align:center;
-	padding-left:80%;
+	/* padding-left:80%; */
 	padding-top:30%;
+	width:20%;
+	justify-self:end;
+	min-width:150px;
 }
 
 .main {
+	text-align:left;
 	padding-top:40%;
-	padding-right:70%;
-	text-decoration:none;
+	/* padding-right:70%; */
+	min-width:200px;
+	width:20%;
 }
 
 p {
