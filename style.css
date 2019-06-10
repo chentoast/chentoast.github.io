@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.sidenav {
+	width:250px;
+	float:left;
+	top:0;
+	overflow-x:hidden;
+	margin-top:150px;
+	margin-left:600px;
+	margin-right:0px;
+}
+
+.sidenav p, ul, h1{
+	font-family: "Source Sans Pro",Raleway,Sans-serif;
+	font-size: 15;
+ }
+ 
+
+.sidenav img {
+	border-radius:15px;
+	width:150px;
+	height:200px;
+	margin-top:25px;
+	margin-bottom:20px;
+}
+
+.main {
+	width:300px;
+	margin-top:250px;
+	float:left;
+}
+
+.main p {
+	font-family: "Source Sans Pro","Raleway",Sans-serif;
+	font-size: 20;
+	word-spacing: 3px;
+}
+
+
+a {
+	color:black;
+	text-decoration:none;
+}
+ 
+
+a:hover {
+	text-decoration:underline;
+}
+
+ 
+ li {
+	list-style-type: none;
+	margin-top: 10px;
+ }
+ 
+ hr {
+	border-top:3px solid black;
+	margin-right: 100px;
+	/*width:500px;*/
+ }
+ 
