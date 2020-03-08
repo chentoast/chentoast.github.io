@@ -6,29 +6,33 @@
 		<title>Tony Chen</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
-			asf
-		</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fake-link").click(function(){
+                    if ($(this).text() == "Contact"){
+                        $(this).text("chenauy[at]bc.edu");
+                    }
+                    else{
+                        $(this).text("Contact");
+                    }
+                })
+            })
+        </script>
 	</head>
 	<body>
-			<div class="header">
-				<h1 >Tony Chen</h1>
-				<hr>
-			</div>
-		<div class="container">
-			<div class="sidebar">
-				<img src="me.png" alt="Temp image!">
-				<ul style="padding:0;">
-					<li><a href="https://github.com/chentau">Github</a></li>
-					<li>Contact</li>
-					<li><a href="cv.pdf">CV</a></li>
-					<li><a href="https://chentau.github.io/blog">Blog</a></li>
-				</ul>
-			</div>
-			<div class="main">
-				<p >I am a junior at Boston College, studying Psychology, Mathematics, and Computer Science (minor).  At a high level, I'm interested in Bayesian Nonparametrics, Computational Cognitive Science, and Approximate Inference Methods.</p>
-				<p> This website is a work in progress.</p>
-			</div>
+        <div class="sidebar">
+            <h1 >Tony Chen</h1>
+            <hr>
+            <img src="me.png" alt="Temp image!">
+            <ul>
+                <li><a href="https://github.com/chentau">Github</a></li>
+                <li><a class="fake-link" href="#">Contact</a></li>
+                <li><a href="cv.pdf">CV</a></li>
+                <li><a href="https://chentau.github.io/blog">Blog<a></li>
+        </div>
+		<div class="main">
+		<p>I'm a senior at Boston College, studying Psychology, Mathematics, and Computer Science (minor).  At a high level, I'm interested in Bayesian Nonparametrics, theoretical/formal approaches to neuroscience, and representation learning.</p>
 		</div>
 	</body>
 </html>
