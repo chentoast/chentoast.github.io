@@ -1,61 +1,99 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-.sidenav {
-	width:250px;
-	float:left;
-	top:0;
-	overflow-x:hidden;
-	margin-top:150px;
-	margin-left:600px;
-	margin-right:0px;
+*{
+	font-family: "Source Sans Pro","Raleway","Sans-serif";
 }
 
-.sidenav p, ul, h1{
-	font-family: "Source Sans Pro",Raleway,Sans-serif;
+.sidenav {
+	width:15%;
+	float:left;
+	overflow-x:hidden;
+	margin-top:10%;
+	margin-left:30%;
+	margin-right:0;
+    margin-bottom:0;
+    min-width: 200px;
+}
+
+.sidenav ul, li{
+	margin-top: 5%;
+	margin-bottom: 5%;
+    margin-left: 0;
 	font-size: 15;
+    margin-right:10%;
+	list-style-type: none;
  }
- 
 
 .sidenav img {
 	border-radius:15px;
-	width:150px;
-	height:200px;
-	margin-top:25px;
-	margin-bottom:20px;
+	width:80%;
+	height:90%;
+	margin-top:5%;
+	margin-bottom:5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.main {
-	width:300px;
-	margin-top:250px;
-	float:left;
-}
-
-.main p {
-	font-family: "Source Sans Pro","Raleway",Sans-serif;
-	font-size: 20;
-	word-spacing: 3px;
-}
-
-
-a {
+.sidenav a {
+    position: relative;
 	color:black;
 	text-decoration:none;
+    text-align: left;
 }
  
-
-a:hover {
-	text-decoration:underline;
+.sidenav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: gray;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
 }
 
- 
- li {
-	list-style-type: none;
-	margin-top: 10px;
- }
- 
+.sidenav a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+}
+
+.header h1{
+    text-align: center;
+}
+
  hr {
 	border-top:3px solid black;
-	margin-right: 100px;
-	/*width:500px;*/
+    margin: 5%;
+    text-align: center;
  }
  
+.main {
+	width:20%;
+	margin-top:20%;
+    height: 65%;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right:10%;
+	float:left;
+    font-size: 20;
+    word-spacing: 3px;
+    box-sizing: border-box;
+    min-width: 150px;
+}
+
+@media(max-width:660px){
+    .sidenav{
+        margin-left: 10%;
+    }
+    .main{
+    }
+}
+

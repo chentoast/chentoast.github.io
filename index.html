@@ -6,6 +6,19 @@
 		<title>Tony Chen</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fake-link").click(function(){
+                    if ($(this).text() == "Contact"){
+                        $(this).text("chenauy[at]bc.edu");
+                    }
+                    else{
+                        $(this).text("Contact");
+                    }
+                })
+            })
+        </script>
 	</head>
 	<body>
 		<div class="sidenav">
@@ -17,13 +30,12 @@
 			<img src="me.png" alt="Temp image!">
 			<ul>
 				<li><a href="https://github.com/chentau">Github</a></li>
-				<li>Contact</li>
+                <li><a class="fake-link" href="#">Contact</a></li>
 				<li><a href="cv.pdf">CV</a></li>
 				<li><a href="https://chentau.github.io/blog">Blog<a></li>
 		</div>
 		<div class="main">
-		<p>I'm a junior at Boston College, studying Psychology, Mathematics, and Computer Science (minor).  At a high level, I'm interested in Bayesian Nonparametrics, Computational Cognitive Science, and Completely Random Measures.</p>
-		<p> This website is a work in progress.</p>
+		<p>I'm a senior at Boston College, studying Psychology, Mathematics, and Computer Science (minor).  At a high level, I'm interested in Bayesian Nonparametrics, theoretical/formal approaches to neuroscience, and representation learning.</p>
 		</div>
 	</body>
 </html>
