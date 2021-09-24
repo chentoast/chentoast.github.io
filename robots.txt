@@ -1,2 +1,2 @@
-User-agent: Googlebot
-Disallow: /cv.pdf/
+User-agent: *
+Disallow: /Academic_CV.pdf/

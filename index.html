@@ -5,34 +5,45 @@
 	<head>
 		<title>Tony Chen</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(".fake-link").click(function(){
-                    if ($(this).text() == "Contact"){
-                        $(this).text("chenauy [at] bc.edu");
-                    }
-                    else{
-                        $(this).text("Contact");
-                    }
-                })
-            })
-        </script>
 	</head>
 	<body>
-        <div class="sidebar">
-            <h1 >Tony Chen</h1>
+        <div class="header">
+            <h1>hi, I'm Tony Chen</h1>
             <hr>
-            <img src="me.png" alt="Temp image!">
-            <ul>
-                <li><a href="https://github.com/chentau">Github</a></li>
-                <li><a class="fake-link" href="#">Contact</a></li>
-                <li><a href="Academic_CV.pdf">Academic CV</a></li>
-                <li><a href="https://chentau.github.io/blog">Blog<a></li>
         </div>
-		<div class="main">
-		<p>I'm a research assistant in the Morality Lab and Social and Cognitive Computational Neuroscience Lab at Boston College, with Liane Young and Stefano Anzellotti, respectively. Previously I was a student at Boston College, where I studied Psychology, Mathematics, and Computer Science (minor), and worked in the Language Learning Lab with Josh Hartshorne. At a high level, I'm interested in Bayesian Nonparametrics, theoretical/formal approaches to neuroscience, and representation learning.</p>
-		</div>
+        <div class="main">
+            <div class="sidebar">
+                <img src="me.png" alt="A picture of me!">
+                <ul>
+                    <li><a href="https://github.com/chentau">github</a></li>
+                    <li><a id="fake-link" href="#">contact</a></li>
+                    <li><a href="Academic_CV.pdf">cv</a></li>
+                    <li><a href="https://chentau.github.io/blog">blog</a></li>
+                </ul>
+            </div>
+            <div class="blurb">
+                <p>
+                    I'm a research assistant in the Morality Lab and Social and Cognitive Computational Neuroscience Lab at Boston College, with Liane Young and Stefano Anzellotti, respectively.
+                    Previously I was a student at Boston College, where I studied Psychology, Mathematics, and Computer Science (minor), and worked in the Language Learning Lab with Josh Hartshorne.
+                    At a high level, I'm interested in Bayesian Nonparametrics, theoretical/formal approaches to neuroscience, and representation learning.
+                </p>
+
+            </div>
+        </div>
 	</body>
+    <script>
+        function makeOnClick() {
+            var toggle = false;
+            return (event) => {
+                toggle = !toggle;
+                if (toggle) {
+                    event.target.innerHTML = "chenauy [at] bc.edu";
+                } else {
+                    event.target.innerHTML = "contact";
+                }
+            }
+        };
+        var link = document.getElementById("fake-link");
+        link.addEventListener("click", makeOnClick());
+    </script>
 </html>
