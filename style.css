@@ -43,7 +43,7 @@ body {
 }
 
 .sidebar li {
-    font-size: .9em;
+    font-size: .8em;
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
@@ -86,7 +86,7 @@ body {
 
 .blurb p {
     margin-left: 4%;
-    font-size: .9em;
+    font-size: .8em;
     word-spacing: 3px;
     line-height: 1.6;
 }
