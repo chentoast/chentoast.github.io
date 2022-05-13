@@ -7,7 +7,7 @@
 body {
 	font-family: "Inter", "Raleway", Sans-serif;
 	animation-name: fadein;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 .header {
@@ -54,13 +54,19 @@ body {
 	height: auto;
 }
 
-.sidebar a {
+a {
     position: relative;
 	color: black;
 	text-decoration: none;
     padding-bottom: .35em;
 }
- 
+
+.blurb a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 .sidebar a::before {
     content: "";
     position: absolute;
@@ -104,7 +110,7 @@ body {
     margin-left: 4%;
     font-size: .8em;
     word-spacing: 3px;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
 @media (max-width: 900px) {
