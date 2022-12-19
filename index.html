@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<head>
-  <meta name="google-site-verification" content="jYyiMRrs3p6KkBHCxmSwbm5HzzNYTYzfNV1qbHCohRg" />
-		<title>tony chen - phd candidate in mit brain and cognitive sciences</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" type="image/png" href="favicon.png">
-	</head>
-	<body>
-        <div class="header">
-            <h1>hi, i'm tony</h1>
-            <hr>
-        </div>
-        <div class="main">
-            <div class="sidebar">
-                <img src="me.jpg" alt="A picture of me!">
-                <ul>
-                    <li><a href="https://github.com/chentoast">github</a></li>
-                    <li><a id="fake-link" href="#">contact</a></li>
-                    <li><a href="cv.html">cv</a></li>
-                    <li><a href="https://chentoast.github.io/notes">notes</a></li>
-                    <!-- <li><a href="papers.html">papers</a></li> -->
-                </ul>
-            </div>
-            <div class="blurb">
-                <p>
-                i'm a first year phd student at mit's <a href="https://bcs.mit.edu" style="text-decoration-color:lightcoral">brain and cognitive sciences</a>, working with <a href="https://cocosci.mit.edu/josh" style="text-decoration-color:green">josh tenenbaum</a> in the <a href="https://cocosci.mit.edu" style="text-decoration-color:slategray">computational cognitive science</a> group.
-                at a high level, i'm primarily interested in how people learn and exploit efficient representations and abstractions for planning and search. i'd like to study these questions in both single and multi-agent environments, in an attempt to bridge key ideas from the planning and ai, with social cognition and game theory. to do so, i draw on a computational toolkit with methods from program synthesis, robotics, and bayesian statistics / probabilistic programming.<br>
-                    previously i was a student and postbac at boston college, where i studied psychology, mathematics, and computer science (minor), and worked with <a href="https://l3atbc.org" style="text-decoration-color:goldenrod">joshua hartshorne</a>, <a href="https://moralitylab.bc.edu" style="text-decoration-color:purple">liane young</a>, and <a href="https://sccnlab.bc.edu" style="text-decoration-color:royalblue">stefano anzellotti</a>.
-            </div>
-        </div>
-	</body>
-    <script>
-        function makeOnClick() {
-            var toggle = false;
-            return (event) => {
-                toggle = !toggle;
-                if (toggle) {
-                    event.target.innerHTML = "chen.tony [at] mit.edu";
-                } else {
-                    event.target.innerHTML = "contact";
-                }
-            }
-        };
-        var link = document.getElementById("fake-link");
-        link.addEventListener("click", makeOnClick());
-    </script>
+  <meta charset="UTF-8" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="jYyiMRrs3p6KkBHCxmSwbm5HzzNYTYzfNV1qbHCohRg"
+    />
+    <meta
+      name="description"
+      content="tony chen - phd candidate in mit brain and cognitive sciences"
+    />
+    <meta name="author" content="tony chen" />
+    <title>tony chen - mit bcs</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>hi, i'm tony</h1>
+      <hr />
+    </div>
+    <div class="main">
+      <div class="sidebar">
+        <img src="me.jpg" alt="tony chen" />
+        <ul>
+          <li><a href="https://github.com/chentoast">github</a></li>
+          <li><a id="fake-link" href="#">contact</a></li>
+          <li><a href="cv.html">cv</a></li>
+          <li><a href="https://chentoast.github.io/notes">notes</a></li>
+          <!-- <li><a href="papers.html">papers</a></li> -->
+        </ul>
+      </div>
+      <div class="blurb">
+        <p>
+          i'm a first year phd student at mit's
+          <a
+            href="https://bcs.mit.edu"
+            style="text-decoration-color: lightcoral"
+            >brain and cognitive sciences</a
+          >, working with
+          <a
+            href="https://cocosci.mit.edu/josh"
+            style="text-decoration-color: green"
+            >josh tenenbaum</a
+          >
+          in the
+          <a
+            href="https://cocosci.mit.edu"
+            style="text-decoration-color: slategray"
+            >computational cognitive science</a
+          >
+          group. at a high level, i'm interested in studying cognitive
+          representations and abstractions for planning - how people quickly
+          learn models of the world around them, and the computational
+          mechanisms that allow these world models to balance the tradeoff
+          between efficiency, flexibility, and fidelity. i'm particularly
+          interested in studying this question in multi-agent contexts, where
+          people's representations of the environment and other agents can often
+          interact in complex ways.
+          <br /><br />
+          previously i was a student and postbac at boston college, where i
+          studied psychology, mathematics, and computer science (minor), and
+          worked with
+          <a href="https://l3atbc.org" style="text-decoration-color: goldenrod"
+            >joshua hartshorne</a
+          >,
+          <a
+            href="https://moralitylab.bc.edu"
+            style="text-decoration-color: purple"
+            >liane young</a
+          >, and
+          <a
+            href="https://sccnlab.bc.edu"
+            style="text-decoration-color: royalblue"
+            >stefano anzellotti</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function makeOnClick() {
+      var toggle = false;
+      return (event) => {
+        toggle = !toggle;
+        if (toggle) {
+          event.target.innerHTML = "chen.tony [at] mit.edu";
+        } else {
+          event.target.innerHTML = "contact";
+        }
+      };
+    }
+    var link = document.getElementById("fake-link");
+    link.addEventListener("click", makeOnClick());
+  </script>
 </html>
