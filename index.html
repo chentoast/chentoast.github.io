@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
+    <canvas id="canvas"></canvas>
     <div class="header">
       <h1>hi, i'm tony</h1>
       <hr />
@@ -29,7 +30,7 @@
           <li><a id="fake-link" href="#">contact</a></li>
           <li><a href="cv.html">cv</a></li>
           <li><a href="https://chentoast.github.io/notes">notes</a></li>
-          <!-- <li><a href="papers.html">papers</a></li> -->
+          <li><a href="https://twitter.com/chentoast1">unfunny tweets</a></li>
         </ul>
       </div>
       <div class="blurb">
@@ -53,13 +54,20 @@
           >
           group. at a high level, i'm interested in studying cognitive
           representations and abstractions for planning - how people quickly
-          learn models of the world around them, and the computational
+          learn and construct models of the world around them, and the computational
           mechanisms that allow these world models to balance the tradeoff
           between efficiency, flexibility, and fidelity. i'm particularly
           interested in studying this question in multi-agent contexts, where
           people's representations of the environment and other agents can often
-          interact in complex ways.
-          <br /><br />
+          interact in complex ways. i love to listen to other people's music -
+          so if you have a song you'd like to recommend,
+          <a
+            href="https://forms.gle/FxcVcj2TsngnxquX9"
+            style="text-decoration-color: mediumslateblue"
+          >
+            i'd love to hear it</a
+          >
+          :) <br /><br />
           previously i was a student and postbac at boston college, where i
           studied psychology, mathematics, and computer science (minor), and
           worked with
@@ -82,7 +90,7 @@
   </body>
   <script>
     function makeOnClick() {
-      var toggle = false;
+      let toggle = false;
       return (event) => {
         toggle = !toggle;
         if (toggle) {
@@ -92,7 +100,8 @@
         }
       };
     }
-    var link = document.getElementById("fake-link");
+    let link = document.getElementById("fake-link");
     link.addEventListener("click", makeOnClick());
   </script>
+  <script src="decorations.js"></script>
 </html>
