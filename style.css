@@ -1,14 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@600;700&display=swap');
 
 @keyframes fadein {
 	from {opacity: 0;}
 	to {opacity: 1;}
 }
 
+:root {
+    /* --c1: #466F87; */
+    /* --c1: #336989; */
+    --c1: #13699B;
+    --c2: #cc5500;
+}
+
+hr {
+    background-color: var(--c1);
+    /* color: var(--c1); */
+    height: 1px;
+}
+
 body {
 	font-family: "Inter", "Raleway", Sans-serif;
 	animation-name: fadein;
-	animation-duration: 2s;
+	animation-duration: 1s;
+    font-weight: 500;
 }
 
 canvas {
@@ -17,7 +31,7 @@ canvas {
     top:0;
 	width:100%;
 	height:100%;
-  z-index: -1;
+    z-index: -1;
 }
 
 .header {
@@ -25,20 +39,20 @@ canvas {
     text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
+	margin-top: 10vh;
 }
 
 .header h1 {
     font-size: 2.5em;
     font-weight: normal;
-    font-family: "Nunito Sans"
+    font-family: "Inter"
 }
 
 .main {
     display: flex;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 3%;
+    margin-top: 5vh;
 }
 
 .sidebar {
@@ -73,14 +87,16 @@ a {
 }
 
 .blurb a {
-    text-decoration: underline;
+    color: var(--c1);
+    /* text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 4px; */
 }
 
-.sidebar a::before {
+a::before {
     content: "";
     position: absolute;
+    background-color: var(--c2);
     width: 100%;
     left: 0;
     bottom: 0;
@@ -94,7 +110,7 @@ a {
     transition: all .3s ease-in-out 0s;
 }
 
-.sidebar a:hover::before {
+a:hover::before {
     visibility: visible;
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
@@ -102,7 +118,7 @@ a {
 }
 
 .sidebar li:nth-child(1) a::before {
-    background-color: red;
+    background-color: saddlebrown;
 }
 
 .sidebar li:nth-child(2) a::before {
@@ -119,6 +135,10 @@ a {
 
 .sidebar li:nth-child(5) a::before {
     background-color: palevioletred;
+}
+
+.sidebar li:nth-child(6) a::before {
+    background-color: navy;
 }
 
 .blurb p {
