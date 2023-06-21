@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@600;700&display=swap');
+
+:root {
+    /* --c1: #466F87; */
+    --c1: #336989;
+    --c2: #cc5500;
+}
+
+body {
+	font-family: "Inter", "Raleway", Sans-serif;
+	animation-name: fadein;
+	animation-duration: 2s;
+    font-weight: 500;
+}
+
+.music-link {
+    font-size: 1.5em;
+}
+
+.contribution-note {
+    font-size: .65em;
+}
+
+.me {
+    color: var(--c2);
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    margin-top: 10vh;
+    width: 60%;
+    border-collapse: separate;
+    border-spacing: 2vw .5vh;
+}
+
+/* tr {
+    margin-bottom: 15%;
+} */
+
+td {
+    /* padding-top: 3%; */
+    text-align: center;
+    vertical-align: middle;
+    /* padding-left: 5%;
+    margin-right: 5%; */
+}
+
+p {
+    line-height: 1.9;
+    font-size: .7em;
+    word-spacing: 3px;
+}
+
+a {
+    position: relative;
+	color: var(--c1);
+	text-decoration: none;
+    padding-bottom: .35em;
+    font-size: 1.3em
+}
+
+a::before {
+    content: "";
+    background-color: var(--c1);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+}
+
+@media (max-width: 560px) {
+    table {
+        width:90%;
+    }
+}
