@@ -8,7 +8,7 @@ canvas.height = height;
 
 let balls = [];
 
-const maxballs = 20;
+const maxballs = 50;
 
 const obj_density = 1;
 
@@ -47,7 +47,7 @@ function onClick(e) {
     }
   }
   let ball = new Ball(
-    e.clientX,
+    e.clientX + Math.round(Math.random() * 4 - 2),
     e.clientY,
     colors[Math.floor(Math.random() * colors.length)],
     rawRadius,

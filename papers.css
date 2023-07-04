@@ -2,8 +2,11 @@
 
 :root {
     /* --c1: #466F87; */
-    --c1: #336989;
-    --c2: #cc5500;
+    --c1: #074C34;
+    /* --c1: #003321; */
+    --c2: #C4A29E;
+    /* --c1: #336989; */
+    /* --c2: #cc5500; */
 }
 
 body {
@@ -62,7 +65,7 @@ a {
 
 a::before {
     content: "";
-    background-color: var(--c1);
+    background-color: var(--c2);
     position: absolute;
     width: 100%;
     left: 0;
