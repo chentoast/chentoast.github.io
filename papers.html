@@ -4,11 +4,30 @@
   <title>papers</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="papers.css" />
+  <script>
+    let song = new Audio();
+    function playOrRestart(url) {
+      if (
+        song.currentTime > 0 &&
+        !song.paused &&
+        !song.ended &&
+        song.currentSrc.split("/").at(-1) === url.split("/").at(-1)
+      ) {
+        song.pause();
+        song.currentTime = 0;
+        return;
+      }
+      song.src = url;
+      song.play();
+    }
+  </script>
   <body>
     <table>
       <tbody>
         <tr>
-          <td class="contribution-note"><span style="font-size:1.3em">♯</span> indicates equal contribution</td>
+          <td class="contribution-note">
+            <span style="font-size: 1.3em">♯</span> indicates equal contribution
+          </td>
         </tr>
         <tr>
           <td>
@@ -17,11 +36,18 @@
                 >inferring the future by imagining the past</a
               >
               <br />
-              k chandra ♯ / <span class="me">t chen ♯</span> / tm li / j ragan-kelley / jb tenenbaum
-              <br>
-              preprint
-              <br>
-              <a href="https://www.youtube.com/watch?v=PDS_yVGnLvY" class="music-link">♫</a>
+              k chandra ♯ / <span class="me">t chen ♯</span> / tm li / j
+              ragan-kelley / jb tenenbaum
+              <br />
+              neurips (spotlight)<br />
+              best paper award at TOM workshop ICML 2023
+              <br />
+              <a
+                href="#"
+                class="music-link"
+                onclick="playOrRestart('papers/pictures_of_you.mp3')"
+                >♫</a
+              >
             </p>
           </td>
         </tr>
@@ -29,14 +55,21 @@
           <td>
             <p>
               <a href="papers/phys_repr-cogsci-2023.pdf"
-                >just-in-time representations for mental simulation in intuitive physics</a
+                >just-in-time representations for mental simulation in intuitive
+                physics</a
               >
               <br />
-              <span class="me">t chen</span> / kr allen / sj cheyette / jb tenenbaum / ka smith
-              <br>
+              <span class="me">t chen</span> / kr allen / sj cheyette / jb
+              tenenbaum / ka smith
+              <br />
               cogsci
-              <br>
-              <a href="https://www.youtube.com/watch?v=65-pwmpICxI" class="music-link">♫</a>
+              <br />
+              <a
+                href="#"
+                class="music-link"
+                onclick="playOrRestart('papers/jit.mp3')"
+                >♫</a
+              >
             </p>
           </td>
         </tr>
@@ -47,11 +80,17 @@
                 >towards a model of confidence judgments in concept learning</a
               >
               <br />
-              te mills ♯ / <span class="me">t chen ♯</span> / c zhang ♯ / jb tenenbaum
-              <br>
+              te mills ♯ / <span class="me">t chen ♯</span> / c zhang ♯ / jb
+              tenenbaum
+              <br />
               cogsci
-              <br>
-              <a href="https://www.youtube.com/watch?v=pG94owGn5bo" class="music-link">♫</a>
+              <br />
+              <a
+                href="#"
+                class="music-link"
+                onclick="playOrRestart('papers/i_dont_know.mp3')"
+                >♫</a
+              >
             </p>
           </td>
         </tr>
@@ -59,14 +98,21 @@
           <td>
             <p>
               <a href="papers/lan-elife-2021.pdf"
-                >likelihood approximation networks (lans) for fast inference of simulation models in cognitive neuroscience</a
+                >likelihood approximation networks (lans) for fast inference of
+                simulation models in cognitive neuroscience</a
               >
               <br />
-              a fengler / ln govindarajan / <span class="me">t chen</span> / mj frank
-              <br>
+              a fengler / ln govindarajan / <span class="me">t chen</span> / mj
+              frank
+              <br />
               elife
-              <br>
-              <a href="https://www.youtube.com/watch?v=x_2hbeAnJTA" class="music-link">♫</a>
+              <br />
+              <a
+                href="#"
+                class="music-link"
+                onclick="playOrRestart('papers/for_when_i_feel_better.mp3')"
+                >♫</a
+              >
             </p>
           </td>
         </tr>
@@ -74,14 +120,20 @@
           <td>
             <p>
               <a href="papers/l2_acquisition-cognition-2021.pdf"
-                >more evidence from over 1.1 million subjects that the critical period for syntax closes in late adolescence</a
+                >more evidence from over 1.1 million subjects that the critical
+                period for syntax closes in late adolescence</a
               >
               <br />
               <span class="me">t chen</span> / jk hartshorne
-              <br>
+              <br />
               cognition
-              <br>
-              <a href="https://www.youtube.com/watch?v=FonjL7DQAUQ" class="music-link">♫</a>
+              <br />
+              <a
+                href="#"
+                class="music-link"
+                onclick="playOrRestart('papers/hailang.mp3')"
+                >♫</a
+              >
             </p>
           </td>
         </tr>
