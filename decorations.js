@@ -8,14 +8,15 @@ canvas.height = height;
 
 let balls = [];
 
-const maxballs = 50;
+const maxballs = 75;
 
 const obj_density = 1;
 
 let fps = 60;
 let dt = 1 / fps;
 
-let colors = ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#d8bf78", "#d6e392", "#abdda4", "#66c2a5", "#3288bd", "#5e4fa2"];
+let colors = ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#d8bf78", "#d6e392", "#abdda4", "#66c2a5", "#3288bd", "#5e4fa2",
+              "#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71"];
 ctx.globalAlpha = 0.6;
 
 function Ball(x, y, color, rawRadius, radius) {
