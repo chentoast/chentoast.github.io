@@ -1,182 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <title>papers</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="papers.css" />
-  <script>
-    let song = new Audio();
-    function playOrRestart(url) {
-      if (
-        song.currentTime > 0 &&
-        !song.paused &&
-        !song.ended &&
-        song.currentSrc.split("/").at(-1) === url.split("/").at(-1)
-      ) {
-        song.pause();
-        song.currentTime = 0;
-        return;
-      }
-      song.src = url;
-      song.play();
-    }
-  </script>
-  <body>
-    <table>
-      <tbody>
-        <tr>
-          <td class="contribution-note">
-            <span style="font-size: 1.5em">⌃</span> indicates equal contribution
-          </td>
-        </tr>
-        <!-- <tr> -->
-        <!--   <td> -->
-        <!--     <p> -->
-        <!--       <a href="papers/communication-cogsci-2024.pdf" -->
-        <!--         >cooperative explanation as rational communication</a -->
-        <!--       > -->
-        <!--       <br /> -->
-        <!--       k chandra / <span class="me">t chen</span> / tm li / j ragan-kelley / jb tenenbaum -->
-        <!--       cogsci -->
-        <!--       <br /> -->
-        <!--       <a -->
-        <!--         href="#" -->
-        <!--         class="music-link" -->
-        <!--         onclick="playOrRestart('papers/make_me_feel.mp3')" -->
-        <!--         >♫</a -->
-        <!--       > -->
-        <!--     </p> -->
-        <!--   </td> -->
-        <!-- </tr> -->
-        <tr>
-          <td>
-            <p>
-              <a href="papers/emotions-cogsci-2024.pdf"
-                >intervening on emotions by planning over a theory of mind</a
-              >
-              <br />
-              <span class="me">t chen⌃</span> / sd houlihan⌃ / k chandra / jb tenenbaum / re saxe
-              <br />
-              cogsci
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/dacelynn.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <a href="papers/bdpt-arxiv-2023.pdf"
-                >inferring the future by imagining the past</a
-              >
-              <br />
-              k chandra⌃ / <span class="me">t chen⌃</span> / tm li / j
-              ragan-kelley / jb tenenbaum
-              <br />
-              neurips (spotlight)<br />
-              best paper award at TOM workshop ICML 2023
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/pictures_of_you.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <a href="papers/phys_repr-cogsci-2023.pdf"
-                >just-in-time representations for mental simulation in intuitive
-                physics</a
-              >
-              <br />
-              <span class="me">t chen</span> / kr allen / sj cheyette / jb
-              tenenbaum / ka smith
-              <br />
-              cogsci
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/dmc.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <a href="papers/concept_confidence-cogsci-2023.pdf"
-                >towards a model of confidence judgments in concept learning</a
-              >
-              <br />
-              te mills⌃ / <span class="me">t chen⌃</span> / ce zhang⌃ / jb
-              tenenbaum
-              <br />
-              cogsci
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/i_dont_know.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <a href="papers/lan-elife-2021.pdf"
-                >likelihood approximation networks (lans) for fast inference of
-                simulation models in cognitive neuroscience</a
-              >
-              <br />
-              a fengler / ln govindarajan / <span class="me">t chen</span> / mj
-              frank
-              <br />
-              elife
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/for_when_i_feel_better.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <a href="papers/l2_acquisition-cognition-2021.pdf"
-                >more evidence from over 1.1 million subjects that the critical
-                period for syntax closes in late adolescence</a
-              >
-              <br />
-              <span class="me">t chen</span> / jk hartshorne
-              <br />
-              cognition
-              <br />
-              <a
-                href="#"
-                class="music-link"
-                onclick="playOrRestart('papers/hailang.mp3')"
-                >♫</a
-              >
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+    <meta charset="UTF-8" />
+    <title>papers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="papers.css" />
+    <body>
+        <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="contribution-note">
+                        <span style="font-size: 1.5em">⌃</span> indicates equal contribution
+                    </td>
+                </tr>
+                <!-- <tr> -->
+                <!--   <td> -->
+                <!--     <p> -->
+                <!--       <a href="papers/communication-cogsci-2024.pdf" -->
+                <!--         >cooperative explanation as rational communication</a -->
+                <!--       > -->
+                <!--       <br /> -->
+                <!--       k chandra / <span class="me">t chen</span> / tm li / j ragan-kelley / jb tenenbaum -->
+                <!--       cogsci -->
+                <!--       <br /> -->
+                <!--       <a -->
+                <!--         href="#" -->
+                <!--         class="music-link" -->
+                <!--         onclick="playOrRestart('papers/make_me_feel.mp3')" -->
+                <!--         >♫</a -->
+                <!--       > -->
+                <!--     </p> -->
+                <!--   </td> -->
+                <!-- </tr> -->
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/emotions-cogsci-2024.pdf"
+                                >intervening on emotions by planning over a theory of mind</a
+                            >
+                            <br />
+                            <span class="me">t chen⌃</span> / sd houlihan⌃ / k chandra / jb tenenbaum / re
+                            saxe
+                            <br />
+                            cogsci
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/bdpt-arxiv-2023.pdf"
+                                >inferring the future by imagining the past</a
+                            >
+                            <br />
+                            k chandra⌃ / <span class="me">t chen⌃</span> / tm li / j ragan-kelley / jb
+                            tenenbaum
+                            <br />
+                            neurips (spotlight)<br />
+                            best paper award at TOM workshop ICML 2023
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/phys_repr-cogsci-2023.pdf"
+                                >just-in-time representations for mental simulation in intuitive physics</a
+                            >
+                            <br />
+                            <span class="me">t chen</span> / kr allen / sj cheyette / jb tenenbaum / ka smith
+                            <br />
+                            cogsci
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/concept_confidence-cogsci-2023.pdf"
+                                >towards a model of confidence judgments in concept learning</a
+                            >
+                            <br />
+                            te mills⌃ / <span class="me">t chen⌃</span> / ce zhang⌃ / jb tenenbaum
+                            <br />
+                            cogsci
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/lan-elife-2021.pdf"
+                                >likelihood approximation networks (lans) for fast inference of simulation
+                                models in cognitive neuroscience</a
+                            >
+                            <br />
+                            a fengler / ln govindarajan / <span class="me">t chen</span> / mj frank
+                            <br />
+                            elife
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="papers/l2_acquisition-cognition-2021.pdf"
+                                >more evidence from over 1.1 million subjects that the critical period for
+                                syntax closes in late adolescence</a
+                            >
+                            <br />
+                            <span class="me">t chen</span> / jk hartshorne
+                            <br />
+                            cognition
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="embed-iframe" style="display: none"></div>
+        <span id="music-player" style="position:fixed;left:94vw;top:2vh;"><a href="javascript:void(0)">♫</a><span />
+        <span id="music-skip" style="position:fixed;left:97vw;top:2vh;font-size:1.3em"><a href="javascript:void(0);">›</a><span />
+        <script type="text/javascript">
+            window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                const element = document.getElementById("embed-iframe");
+                const options = {
+                    // width: "100%",
+                    // height: "162",
+                    width: "0",
+                    height: "0",
+                    // uri: "spotify:playlist:5Iv5H6o09HUWk755JVmMO2",
+                    uri: "spotify:track:0MjHkPdFJJ6dvRDBueuZvw",
+                };
+                const callback = (EmbedController) => {
+                    document.getElementById("music-player").addEventListener("click", () => {
+                        EmbedController.togglePlay();
+                    });
+                    document.getElementById("music-skip").addEventListener("click", () => {
+                        fetch("https://chentoast.github.io/spotify-tracks.txt")
+                            .then((res) => res.text())
+                            .then((tracks) => {
+                                let tracks_arr = tracks.split("\n");
+                                let track = tracks_arr[Math.floor(Math.random() * tracks_arr.length)];
+                                EmbedController.loadUri(track);
+                                EmbedController.togglePlay();
+                            })
+                            .catch((error) => {
+                                console.error(error);
+                            });
+                    });
+                };
+                IFrameAPI.createController(element, options, callback);
+            };
+        </script>
+    </body>
 </html>
